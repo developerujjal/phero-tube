@@ -1,0 +1,220 @@
+body,
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.container {
+    max-width: 95%; /* Maximum width is 90% of the parent element */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add some padding */
+}
+
+
+.wrapper-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 5px 22px 5px;
+    border-bottom: 2px solid #17171733;
+}
+
+.logo {
+    width: 12%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.sort-container {
+    background-color: #25252533;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.sort-container:hover{
+    background-color: #0e0c0c38;
+}
+
+.sort-container p, .blog-container p {
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 0.97rem;
+    color: #252525;
+}
+
+.blog-container {
+    background-color: #FF1F3D;
+    border-radius: 4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.blog-container p {
+    color: #FFFFFF;
+}
+
+.blog-container:hover{
+    background-color: #d31a32;
+}
+
+
+
+
+
+ /* Categories */
+
+
+
+.category {
+    padding: 7px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #25252526;
+    color: #252525B3;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.category:hover {
+    background-color: #ccc;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.category-wrapper {
+    padding: 35px 0px;
+}
+
+
+
+
+/* Card Stuff */
+
+.all-videos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.singel-video-main {
+    width: 24%;
+}
+
+.video-thumb {
+    width: 100%;
+    
+}
+
+.video-thumb img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.video-details-main-container{
+    margin-top: 15px;
+}
+
+.video-details-wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.video-channel-logo {
+    width: 24%;
+}
+
+.video-channel-logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.video-title h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 24px;
+    color: #171717;
+    cursor: pointer;
+}
+
+.name-and-icon p, .views p {
+    font-size: 0.90rem;
+    color: #171717B3;
+    font-weight: 500;
+}
+
+.name-and-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 0px 8px 0px;
+}
+
+.name-and-icon i {
+    color: #2568EF;
+    font-size: 1.4rem;
+}
+
+
+
+/* Spinner */
+.spinnerLoad {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:639px) {
+    .wrapper-menu{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0px 25px 0px;
+    }
+
+
+    .logo {
+        width: 60%;
+    }
+
+    .categories{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 25px;
+    }
+
+    .category{
+        padding: 6px 12px;
+    }
+
+    .all-videos-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .singel-video-main{
+        width: 100%;
+    }
+}
