@@ -39,13 +39,14 @@
         <section>
             <div class="container">
                 <div class="category-wrapper">
-                    <div class="categories">
-                        <button class="category active">All</button>
+                    <div id="categories-container" class="categories">
+
+                        <!-- <button class="category active">All</button>
                         <button class="category">Music</button>
                         <button class="category">Comedy</button>
-                        <button class="category">Drawing</button>
+                        <button class="category">Drawing</button> -->
                     </div>
-                    <div class="spinnerLoad hidden">
+                    <div id="loading-spinner" class="spinnerLoad hidden">
                         <img src="img/loading-spinner.svg" alt="Loading..." width="50" height="50" />
                     </div>                  
                 </div>
@@ -53,110 +54,57 @@
         </section>
         <section>
             <div class="container">
-                <div class="all-videos-container">
-                    <div class="singel-video-main">
-                        <div class="video-thumb">
-                            <img src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="">
+                <div id="not-found" class="no-found-container hidden">
+                    <div class="no-found-wrapper">
+                        <div class="no-found-img">
+                            <img src="img/not found.png" alt="">
                         </div>
-                        <div class="video-details-main-container">
-                            <div class="video-details-wrapper">
-                                <div class="video-channel-logo">
-                                    <img src="https://i.ibb.co/D9wWRM6/olivia.jpg" alt="">
-                                </div>
-                                <div class="video-detail-others">
-                                    <div class="video-title">
-                                        <h3>Building a Winning UX Strategy Using the Kano Model</h3>
-                                    </div>
-                                    <div class="name-and-icon">
-                                        <p><span>Awlad Hossain</span></p>
-                                        <i class="material-icons">verified</i>
-                                    </div>  
-                                    <div class="views">
-                                        <p><span>91K</span> views</p>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="singel-video-main">
-                        <div class="video-thumb">
-                            <img src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="">
-                        </div>
-                        <div class="video-details-main-container">
-                            <div class="video-details-wrapper">
-                                <div class="video-channel-logo">
-                                    <img src="https://i.ibb.co/D9wWRM6/olivia.jpg" alt="">
-                                </div>
-                                <div class="video-detail-others">
-                                    <div class="video-title">
-                                        <h3>Building a Winning UX Strategy Using the Kano Model</h3>
-                                    </div>
-                                    <div class="name-and-icon">
-                                        <p><span>Awlad Hossain</span></p>
-                                        <i class="material-icons">verified</i>
-                                    </div>  
-                                    <div class="views">
-                                        <p><span>91K</span> views</p>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="singel-video-main">
-                        <div class="video-thumb">
-                            <img src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="">
-                        </div>
-                        <div class="video-details-main-container">
-                            <div class="video-details-wrapper">
-                                <div class="video-channel-logo">
-                                    <img src="https://i.ibb.co/D9wWRM6/olivia.jpg" alt="">
-                                </div>
-                                <div class="video-detail-others">
-                                    <div class="video-title">
-                                        <h3>Building a Winning UX Strategy Using the Kano Model</h3>
-                                    </div>
-                                    <div class="name-and-icon">
-                                        <p><span>Awlad Hossain</span></p>
-                                        <i class="material-icons">verified</i>
-                                    </div>  
-                                    <div class="views">
-                                        <p><span>91K</span> views</p>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="singel-video-main">
-                        <div class="video-thumb">
-                            <img src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="">
-                        </div>
-                        <div class="video-details-main-container">
-                            <div class="video-details-wrapper">
-                                <div class="video-channel-logo">
-                                    <img src="https://i.ibb.co/D9wWRM6/olivia.jpg" alt="">
-                                </div>
-                                <div class="video-detail-others">
-                                    <div class="video-title">
-                                        <h3>Building a Winning UX Strategy Using the Kano Model</h3>
-                                    </div>
-                                    <div class="name-and-icon">
-                                        <p><span>Awlad Hossain</span></p>
-                                        <i class="material-icons">verified</i>
-                                    </div>  
-                                    <div class="views">
-                                        <p><span>91K</span> views</p>
-                                    </div>                               
-                                </div>
-                            </div>
+                        <div class="no-found-text">
+                            <p>Oops!! Sorry, There is no content here</p>
                         </div>
                     </div>
                 </div>
+                <div id="videosCard-Container" class="all-videos-container">
+
+                    <!-- Card Append
+                    <div class="singel-video-main">
+                        <div class="video-thumb">
+                            <img src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="">
+                            <div class="video-time-container">
+                                <div class="video-timeMain">
+                                    <p><span>4 hrs 31 min ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-details-main-container">
+                            <div class="video-details-wrapper">
+                                <div class="video-channel-logo">
+                                    <img src="https://i.ibb.co/D9wWRM6/olivia.jpg" alt="">
+                                </div>
+                                <div class="video-detail-others">
+                                    <div class="video-title">
+                                        <h3>Building a Winning UX Strategy Using the Kano Model</h3>
+                                    </div>
+                                    <div class="name-and-icon">
+                                        <p><span>Awlad Hossain</span></p>
+                                        <i class="material-icons">verified</i>
+                                    </div>  
+                                    <div class="views">
+                                        <p><span>91K</span> views</p>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     -->
+
+                </div>
+
             </div>
         </section>
     </main>
+
+    <script src="js/phero-tube.js"></script>
 </body>
 
 </html>
