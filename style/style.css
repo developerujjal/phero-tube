@@ -284,6 +284,10 @@ ul,li{
     .singel-video-main{
         width: 100%;
     }
+
+    .no-found-wrapper{
+        padding: 40px 30px;
+    }
 }
 
 
@@ -300,5 +304,9 @@ ul,li{
 
     .singel-video-main{
         width: 48%;
+    }
+
+    .no-found-wrapper{
+        padding: 50px;
     }
 }
