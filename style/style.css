@@ -193,7 +193,7 @@ ul,li{
 
 /* time show */
 
-.video-timeMain {
+/* .video-timeMain {
     background-color: #171717;
     border-radius: 6px;
 }
@@ -210,6 +210,27 @@ ul,li{
     position: absolute;
     right: 5px;
     bottom: 14px;
+}
+ */
+
+ div#main-timer {
+    position: relative;
+}
+
+.video-timeMain {
+    position: absolute;
+    background-color: #171717;
+    border-radius: 6px;
+    bottom: 0.7rem;
+    right: 0.5rem;
+}
+
+.video-timeMain p {
+    color: white;
+    text-align: center;
+    font-size: 0.79rem;
+    padding: 5px 25px;
+    
 }
 
 
